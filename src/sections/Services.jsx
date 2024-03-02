@@ -1,0 +1,13 @@
+import { services } from "../constants";
+import ServiceCard from "../components/ServiceCard";
+const Services = () => {
+  return (
+    <section className="max-continer flex justify-center flex-wrap gap-9">
+      {services.map((services) => (
+        <ServiceCard key={services.label}{...services} />
+      ))}
+    </section>
+  )
+}
+
+export default Services
